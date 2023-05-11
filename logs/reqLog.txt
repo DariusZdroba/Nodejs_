@@ -1,0 +1,42 @@
+20230510	19:56:10	 12acaeef-01c9-4427-a928-6702b6bedf22	 /new-page	GET
+20230510	19:56:56	 b4d3927e-d09c-4cea-9458-f02e63612e31	 /new-page	GET
+20230510	19:56:57	 d77c72ec-1123-40c8-9c86-9ed8059a8c98	 /css/style.css	GET
+20230510	19:56:57	 efe1cf4f-ad54-4124-97d5-4feb8518fb71	 /poza.png	GET
+20230510	19:56:57	 c455925d-5202-4e7d-a006-a0e4e3fb6e19	 /favicon.ico	GET
+20230510	19:57:00	 601b670b-b540-4188-ab88-dc4cdccfeaeb	 /	GET
+20230510	19:57:01	 7e1dd178-6662-47d6-911a-f68cae2e9673	 /css/style.css	GET
+20230510	20:38:15	 783b8ba4-b4da-4929-899f-206da9c83d19	 GET	undefined	/index.html
+20230510	20:38:16	 5f797a15-573a-4c4c-b049-a2e902959fb9	 GET	undefined	/css/style.css
+20230510	20:40:20	 2e73c8cd-2c2f-4252-a225-3a7b1f5f4cb3	 GET	undefined	/index.html
+20230510	20:40:20	 a4cbc2f8-0894-4c9d-8ade-e3e33fcdf8de	 GET	undefined	/css/style.css
+20230510	20:41:24	 d6849641-a434-4722-83b0-31c4a4b5be52	 OPTIONS	https://www.google.com	/
+20230510	20:41:24	 50763f9f-1231-4601-8c73-1d357b008cd5	 GET	https://www.google.com	/
+20230510	20:43:20	 10933390-0903-476a-bdb4-6cfd4408ec2c	 OPTIONS	https://www.google.com	/
+20230510	20:43:20	 238a8b8f-b13d-4e58-b81a-3010ca10da1c	 GET	https://www.google.com	/
+20230510	20:48:43	 cc119c6c-80ee-4fc3-80e7-08e793dcde0d	 OPTIONS	https://www.google.com	/
+20230510	20:48:43	 96d34539-0123-4e3a-98aa-cd17fd3f1cdf	 GET	https://www.google.com	/
+20230510	20:49:12	 88eee0c3-a04e-4d89-a951-ef9cf298a49c	 OPTIONS	https://www.google.com	/
+20230510	20:49:12	 a942b1a0-080c-44f9-9f00-4a105f870703	 GET	https://www.google.com	/
+20230510	20:53:40	 142be583-4b53-417a-8549-b1791d56e07b	 OPTIONS	https://www.google.com	/
+20230510	20:53:41	 a89067e7-be6b-4094-a057-5355d6c7fbf7	 GET	https://www.google.com	/
+20230510	20:53:58	 d18e3a82-bb6b-40ca-84eb-2e29c685223b	 GET	https://www.youtube.com	/
+20230510	20:54:46	 36d0f7f0-9b30-4a19-bd80-423050a995d4	 GET	undefined	/
+20230510	20:55:30	 96897317-2114-493f-b732-8061de4f1822	 GET	undefined	/
+20230510	20:55:30	 db6b467f-3d1f-4537-9f7c-4662dda1c3b0	 GET	undefined	/css/style.css
+20230510	21:42:01	 deef0219-7091-48b1-9b8e-018636f1c440	 GET	undefined	/
+20230510	21:42:39	 c9a1f462-06eb-47a0-88e9-2fa5b4537c94	 GET	undefined	/
+20230510	21:42:39	 0712b727-843a-498f-9f6c-0d246eae42a5	 GET	undefined	/css/style.css
+20230510	21:44:04	 13409bdc-7459-4411-b16b-f734f271f35c	 GET	undefined	/dari
+20230510	21:44:04	 1b0f6be5-42db-4f87-930f-93775ab27d0b	 GET	undefined	/css/style.css
+20230510	21:46:31	 3bfcf8b0-d10d-43e6-91e0-74eb7df15673	 GET	undefined	/dari
+20230510	21:46:31	 b0ae6ae3-6b57-4d52-9b8a-50ed51878c52	 GET	undefined	/css/style.css
+20230510	21:46:32	 4c5a0c6c-5f3f-4300-a61b-0daac1bacfe9	 GET	undefined	/dari
+20230510	21:46:32	 4c032242-9aad-4018-97eb-0db73f761487	 GET	undefined	/css/style.css
+20230510	21:47:26	 2049b066-4391-4a9d-a3df-739fc4e3282f	 GET	undefined	/new-page
+20230510	21:47:26	 0f861ab6-8ba1-4f0a-817c-ac281d94ecf8	 GET	undefined	/css/style.css
+20230510	21:47:26	 f70b8c7a-a4b4-45bb-bd1f-e26d4cdba3de	 GET	undefined	/poza.png
+20230510	21:47:30	 32e2ce39-ae31-46a2-8698-ca2d9c6c7e77	 GET	undefined	/index.html
+20230510	21:47:30	 453ed659-f309-4804-9ec3-92cdd3b8735f	 GET	undefined	/css/style.css
+20230510	21:48:12	 b03d3df4-9d67-4eff-8b23-4c75cb850497	 GET	undefined	/new-page
+20230510	21:48:12	 1d90ded8-a9de-4d82-b159-cd3a0480495f	 GET	undefined	/css/style.css
+20230510	21:48:12	 25d91e92-c6cb-4354-bf9d-3adc7d6844c9	 GET	undefined	/poza.png

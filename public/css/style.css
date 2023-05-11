@@ -1,0 +1,22 @@
+h1 {
+    background-color: royalblue;
+    display: flex;
+    flex-grow: 1rem;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    margin-top: -10px;
+    width: 115%;
+    margin-left: -10%;
+}
+body{
+    background-color: navy;
+}
+img{
+    display: flex;
+    width: 25%;
+    height: 25%;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+}
