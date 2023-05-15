@@ -1,26 +1,29 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
+const cors = require('cors');
+const corsOption = require('./config/corsOptions');
 const {logger} = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
-const cors = require('cors');
+const verifyJWT = require('./middleware/verifyJWT');
+const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials');
+const mongoose = require('mongoose');
+const connectDB = require('./config/dbCon');
 const PORT = process.env.PORT || 3500;
+
+//Connect to mongoDB
+connectDB();
 
 //custom middleware logger
 app.use(logger);
 
-const whiteList = ['https://www.google.com', 'http://127.0.0.1:5500', 'http://localhost:3500']
-const corsOption = {
-    origin: (origin, callback) => {
-        if(whiteList.indexOf(origin) !== -1 || !origin ){
-            callback(null, true);
-        }
-        else{
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    optionsSuccessStatus: 200
-}
+
+//Handle options credentials check - before CORS!!
+//and fetch cookies credentials requirement
+app.use(credentials);
+
 //cross-origin-resource-sharing
 app.use(cors(corsOption))
 
@@ -28,24 +31,23 @@ app.use(express.urlencoded({extended: false}));
 
 app.use(express.json());
 
+//middleware for cookies
+app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, '/public')));
 
+app.use('/', require('./routes/root'));
+app.use('/register', require('./routes/register'));
+app.use('/auth', require('./routes/auth'));
+app.use('/refresh', require('./routes/refresh'));
+app.use('/logout', require('./routes/logout'));
 
-app.get('^/$|/index(.html)?', (req, res) => {
-   // res.sendFile('./views/index.html', { root: __dirname});
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+app.use(verifyJWT);
+app.use('/employees', require('./routes/api/employees'));
+app.use('/users', require('./routes/api/users'));
 
-});
-app.get('/new-page(.html)?', (req, res) => {
 
-    res.sendFile(path.join(__dirname, 'views', 'new-page.html'));
 
-});
-app.get('/old-page(.html)?', (req, res) => {
-
-    res.redirect(301, '/new-page.html')
-
-});
 
 app.all('*', (req, res) => {
     res.status(404);
@@ -64,6 +66,12 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`)
-});
+
+mongoose.connection.once('open',() => {
+    console.log('Conected to mongoDB');
+    app.listen(PORT, () => {
+        console.log(`server running on port ${PORT}`)
+    });
+    
+
+})

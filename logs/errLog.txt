@@ -1,1 +1,11 @@
 20230510	21:42:01	 91c772bc-eac4-4eac-8d5f-ccbc78f0615b	 Error : Not allowed by CORS
+20230511	16:03:45	 90abfa9a-31b8-4cf1-aa8a-4de8cc256ea0	 TypeError : req.json is not a function
+20230511	16:04:15	 4d21d278-532d-4b5f-b561-22cdce9f55b4	 TypeError : req.json is not a function
+20230511	17:16:56	 bae99bf9-0702-4d95-a692-ef98def7174a	 SyntaxError : Unexpected end of JSON input
+20230511	18:42:47	 172b41c9-3358-4d97-b179-ed32478c44e0	 TypeError : Cannot read properties of undefined (reading 'username')
+20230511	18:44:54	 e7f69e3c-8f47-43f2-bc50-5490f1844815	 TypeError : Cannot read properties of undefined (reading 'username')
+20230513	13:46:06	 9a92c650-cac1-4f60-9dfa-d26a0777f5c9	 ReferenceError : rollesArray is not defined
+20230513	13:49:09	 42b2a04a-7faf-455b-94f9-81a6ab6d3d7e	 ReferenceError : rollesArray is not defined
+20230513	13:53:51	 dcab4d21-14b4-4432-91aa-e7a449568d0c	 ReferenceError : rollesArray is not defined
+20230513	13:59:43	 d6a86c26-d5e8-47ac-aea6-d4458525c6f8	 ReferenceError : rollesArray is not defined
+20230513	14:02:28	 ed0025ea-a643-47a3-af8f-c256aa5b91ce	 ReferenceError : rollesArray is not defined
