@@ -23,4 +23,31 @@ const getUser = async (req, res) => {
     res.json(user);
 }
 
-module.exports = {getAllUsers, deleteUser, getUser }
+
+const putUser = async (req, res, next) => {
+    try{
+    
+     const user = await User.findOne({_id: req.params.id}).exec();
+     if(!user) return res.status(204).json({"message": "no user matches this id"});
+     else{
+         let updatedFile = await User.findByIdAndUpdate(req.params.id, req.body, {
+             new: true,
+             runVaidator: true
+         })
+ 
+     }
+ 
+         res.json({
+             success: false,
+             message: 'updated success',
+             comment: updatedComment
+         })
+     }
+     catch(err) {
+         res.status(500)
+     }
+    
+}
+
+
+module.exports = {getAllUsers, deleteUser, getUser, putUser }

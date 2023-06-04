@@ -9,3 +9,8 @@
 20230513	13:53:51	 dcab4d21-14b4-4432-91aa-e7a449568d0c	 ReferenceError : rollesArray is not defined
 20230513	13:59:43	 d6a86c26-d5e8-47ac-aea6-d4458525c6f8	 ReferenceError : rollesArray is not defined
 20230513	14:02:28	 ed0025ea-a643-47a3-af8f-c256aa5b91ce	 ReferenceError : rollesArray is not defined
+20230517	18:25:58	 3cccfa1d-fda3-401b-97a9-1523686410f9	 Error : Not allowed by CORS
+20230518	12:23:09	 af838f52-6ca6-4ead-82a4-63f487edf3c6	 PayloadTooLargeError : request entity too large
+20230518	12:23:16	 354aab9c-9678-4ad2-b90e-f01306fee781	 PayloadTooLargeError : request entity too large
+20230518	12:23:45	 8ee61564-c33a-4359-8ca5-0fbdb2929383	 PayloadTooLargeError : request entity too large
+20230518	12:23:52	 7e38bd2c-a0ff-4b37-ae99-5d95e880c476	 PayloadTooLargeError : request entity too large
